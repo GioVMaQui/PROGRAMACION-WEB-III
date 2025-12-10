@@ -1,0 +1,26 @@
+/* src/styles/Home.css */
+.home-container {
+    min-height: 100vh;
+}
+
+/* src/styles/Login.css */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* src/styles/Registro.css */
+.registro-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* src/styles/Dashboard.css */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}

@@ -1,0 +1,530 @@
+/* Colores principales */
+:root {
+    --primary-color: #FF6B6B;
+    --secondary-color: #4ECDC4;
+    --accent-color: #FFD166;
+    --dark-color: #2C3E50;
+    --light-color: #F7F9FC;
+    --success-color: #06D6A0;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.app {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+/* Navbar mejorado */
+.navbar-dark.bg-dark {
+    background: linear-gradient(135deg, var(--dark-color) 0%, #34495e 100%) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white !important;
+}
+
+.navbar-brand i {
+    color: var(--accent-color);
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+/* Botones mejorados */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #ff8e8e 100%);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+    background: linear-gradient(135deg, #ff8e8e 0%, var(--primary-color) 100%);
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.btn-lg {
+    border-radius: 50px;
+    padding: 1rem 2.5rem;
+}
+
+/* Cards mejoradas */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-title {
+    color: var(--dark-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Hero section mejorado */
+.hero-section {
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(78, 205, 196, 0.1) 100%);
+    padding: 4rem 0;
+    border-radius: 0 0 30px 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+}
+
+.hero-section h1 {
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--dark-color);
+}
+
+.hero-section .text-primary {
+    color: var(--primary-color) !important;
+}
+
+/* Carousel mejorado */
+.carousel-item img {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.9;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+    background-color: var(--secondary-color);
+}
+
+/* Badges mejorados */
+.badge {
+    padding: 0.5em 1em;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.bg-primary {
+    background: linear-gradient(135deg, var(--primary-color), #ff8e8e) !important;
+}
+
+.bg-success {
+    background: linear-gradient(135deg, var(--success-color), #06D6A0) !important;
+}
+
+/* Footer mejorado */
+footer {
+    background: linear-gradient(135deg, var(--dark-color) 0%, #2c3e50 100%);
+    color: white;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+}
+
+footer h5 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Formularios mejorados */
+.form-control,
+.form-select {
+    border: 2px solid #e1e5eb;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(255, 107, 107, 0.25);
+}
+
+/* Testimonios mejorados */
+.testimonio-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.testimonio-card:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Sección de contacto */
+.contact-info-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-left: 5px solid var(--primary-color);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.contact-info-card:hover {
+    transform: translateX(10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Animaciones */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.float-animation {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 2rem 0;
+        text-align: center;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Efectos especiales */
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+/* Gradientes de fondo para secciones */
+.bg-gradient-light {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #ff8e8e 100%);
+}
+
+/* Tarjetas de producto especiales */
+.product-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+/* Estilos para íconos */
+.bi {
+    vertical-align: middle;
+}
+
+.text-warning {
+    color: var(--accent-color) !important;
+}
+
+/* Mejoras en los badges de categoría */
+.category-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+/* Efecto de sombra para imágenes */
+.img-shadow {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+}
+
+/* Mejoras en los dropdowns */
+.dropdown-menu {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 0.5rem 0;
+}
+
+.dropdown-item {
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    margin: 0.25rem 0.5rem;
+    width: auto;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 107, 107, 0.1);
+    color: var(--primary-color);
+}
+
+/* Estilos para las páginas de login y registro */
+.auth-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.auth-header {
+    text-align: center;
+    padding: 2rem 0 1rem;
+}
+
+.auth-header h2 {
+    color: var(--dark-color);
+    font-weight: 800;
+}
+
+.auth-form .form-label {
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Efectos de hover en enlaces */
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Personalización del scroll */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff8e8e;
+}
+
+
+/* Versión minimalista */
+.login-minimal {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f7fa;
+    padding: 20px;
+}
+
+.login-card {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e1e8ed;
+}
+
+.login-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1a202c;
+    margin-bottom: 8px;
+}
+
+.login-subtitle {
+    text-align: center;
+    color: #718096;
+    margin-bottom: 32px;
+    font-size: 14px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 6px;
+    color: #4a5568;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: #4299e1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-submit:hover:not(:disabled) {
+    background: #3182ce;
+}
+
+.btn-submit:disabled {
+    background: #cbd5e0;
+    cursor: not-allowed;
+}
